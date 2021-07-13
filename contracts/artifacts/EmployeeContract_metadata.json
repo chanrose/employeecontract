@@ -1,0 +1,229 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_addresses",
+						"type": "address[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "_names",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_salaries",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_employee",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_newSalary",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_now",
+						"type": "uint256"
+					}
+				],
+				"name": "ChangeOfSalaryEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_employee",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_salary",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_position",
+						"type": "uint256"
+					}
+				],
+				"name": "addNewEmployee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_employee",
+						"type": "address"
+					}
+				],
+				"name": "approveEmployeePosition",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_employee",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newPosition",
+						"type": "uint256"
+					}
+				],
+				"name": "changeEmployeePosition",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEmployees",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEmployeesInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "salary",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool[]",
+								"name": "approvals",
+								"type": "bool[]"
+							},
+							{
+								"internalType": "enum EmployeeContract.Position",
+								"name": "position",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct EmployeeContract.Employee[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getGrandTotal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_employee",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newSalary",
+						"type": "uint256"
+					}
+				],
+				"name": "modifySalary",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EmployeeContract.sol": "EmployeeContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EmployeeContract.sol": {
+			"keccak256": "0xedc8c92d2979bf1b21b775265b30cf3a3bd325ddce275b12c06c94ea519932c3",
+			"urls": [
+				"bzz-raw://5fbda6c3cb23d3deeefc7cb252ca6167905bea6ef4bf63899cd36823a018cd66",
+				"dweb:/ipfs/Qma5RCaHqRB9QTULdZxDtab61dCAehto8dPX5p2KZqSyXF"
+			]
+		}
+	},
+	"version": 1
+}
